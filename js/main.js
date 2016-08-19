@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
   //background
 
   var width, height, wrapper, canvas, ctx, target, inView = true;
@@ -9,11 +9,8 @@ $(document).ready(function(){
 
   var peakWidth = 0;
   var peakHeight = 0;
-  var gridXPoints = 0;
-  var gridYPoints = 0;
 
   var pointOffset = 64;
-  var numPoints = 500;
 
 // Main
   initCanvas();
@@ -84,7 +81,6 @@ $(document).ready(function(){
 
 // Event handling
   function addListeners() {
-    //wrapper.addEventListener('mousemove', mouseMove);
     window.addEventListener('scroll', scrollCheck);
     window.addEventListener('resize', resize);
     window.addEventListener('load', resize);
@@ -192,7 +188,7 @@ $(document).ready(function(){
         point.active = 0;
         point.circle.active = 0;
       }
-      if(point.active > 0 && !point.animating){
+      if (point.active > 0 && !point.animating) {
         shiftPoint(point);
       }
       point.draw();
@@ -226,7 +222,7 @@ $(document).ready(function(){
     }
   }
 
-  function Point(x, y, originX, originY){
+  function Point(x, y, originX, originY) {
     var _this = this;
 
     // constructor
