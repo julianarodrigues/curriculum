@@ -1,0 +1,16 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Alan Jhonnes' CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alan Jhonnes <aj@alanjhonnes.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.3",
+    "fontawesome": "^4.5.0",
+    "gsap": "^1.19.0"
+  }
+}
