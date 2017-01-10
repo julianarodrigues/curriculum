@@ -15,12 +15,15 @@ h6 {
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
+p {
+  margin-bottom: 0.8rem;
+}
 h5,
 h6 {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 .heading {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 4px;
 }
 .section-title {
@@ -88,7 +91,7 @@ ul ul li {
   border-bottom-style: solid;
 }
 article {
-  padding: 0px 5px 17px;
+  padding: 0px 5px 8px;
 }
 .tag {
   padding: 0.35em 0.5em;
@@ -121,11 +124,14 @@ article {
   background-color: #009ada;
 }
 @media print {
+  html {
+    font-size: 12px;
+  }
   .wrapper-content {
     background-color: #ffffff;
     background-image: none;
   }
-  .tag {
+  .badge {
     background-color: #ffffff;
     color: #333333;
     font-weight: 400;
@@ -135,5 +141,17 @@ article {
   }
   #canvas {
     display: none;
+  }
+  .headline {
+    display: inline-block;
+  }
+  .subline {
+    display: inline-block;
+    font-size: 2.0rem;
+    color: #009ada;
+    margin-left: 6px;
+  }
+  .subline:before {
+    content: ' - ';
   }
 }
