@@ -1,4 +1,4 @@
-@primary-color: #009ada;
+@primary-color: #00C098;
 @line-width-thick: 4px;
 @line-width-thin: 2px;
 
@@ -147,6 +147,11 @@ article {
   }
 }
 
+.badge {
+    background-color: @primary-color;
+    color: #ffffff;
+    font-weight: 400;
+  }
 
 
 @media print {
@@ -175,7 +180,7 @@ article {
   .subline {
     display: inline-block;
     font-size: 2.0rem;
-    color: #009ada;
+    color: @primary-color;
     margin-left: 6px;
     &:before {
       content: ' - ';
