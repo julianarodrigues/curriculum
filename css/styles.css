@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #009ada;
+  color: #00C098;
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
@@ -27,11 +27,11 @@ h6 {
   margin-bottom: 4px;
 }
 .section-title {
-  color: #009ada;
+  color: #00C098;
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom-width: 2px;
-  border-bottom-color: #009ada;
+  border-bottom-color: #00C098;
   border-bottom-style: solid;
 }
 .side-content {
@@ -42,18 +42,18 @@ h6 {
 }
 .main {
   border-left-width: 4px;
-  border-left-color: #009ada;
+  border-left-color: #00C098;
   border-left-style: solid;
   padding: 2px 15px;
 }
 .separator {
   border-bottom-width: 2px;
-  border-bottom-color: #009ada;
+  border-bottom-color: #00C098;
   border-bottom-style: solid;
 }
 .separator-sm {
   border-bottom-width: 1px;
-  border-bottom-color: #009ada;
+  border-bottom-color: #00C098;
   border-bottom-style: solid;
 }
 #wrapper {
@@ -77,17 +77,17 @@ ul ul {
 ul ul li {
   padding-left: 5px;
   border-left-width: 1px;
-  border-left-color: #009ada;
+  border-left-color: #00C098;
   border-left-style: solid;
   border-bottom-width: 1px;
-  border-bottom-color: #009ada;
+  border-bottom-color: #00C098;
   border-bottom-style: dotted;
 }
 .list-item {
   padding-left: 5px;
   padding-bottom: 2px;
   border-bottom-width: 1px;
-  border-bottom-color: #009ada;
+  border-bottom-color: #00C098;
   border-bottom-style: solid;
 }
 article {
@@ -105,11 +105,11 @@ article {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  color: #009ada;
+  color: #00C098;
   background-color: #ffffff;
   border-style: solid;
   border-width: 1px;
-  border-color: #009ada;
+  border-color: #00C098;
   text-align: center;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -121,7 +121,12 @@ article {
 .social-icon:active,
 .social-icon:focus {
   color: #ffffff;
-  background-color: #009ada;
+  background-color: #00C098;
+}
+.badge {
+  background-color: #00C098;
+  color: #ffffff;
+  font-weight: 400;
 }
 @media print {
   html {
@@ -144,14 +149,5 @@ article {
   }
   .headline {
     display: inline-block;
-  }
-  .subline {
-    display: inline-block;
-    font-size: 2.0rem;
-    color: #009ada;
-    margin-left: 6px;
-  }
-  .subline:before {
-    content: ' - ';
   }
 }

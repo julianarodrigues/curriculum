@@ -176,8 +176,8 @@ $(document).ready(function () {
 
       //detect points in range
       if (distance < 4000) {
-        point.active = 0.4;
-        point.circle.active = 0.6;
+        point.active = 0.3;
+        point.circle.active = 0.4;
       } else if (distance < 20000) {
         point.active = 0.1;
         point.circle.active = 0.3;
@@ -246,13 +246,13 @@ $(document).ready(function () {
         ctx.beginPath();
         ctx.moveTo(_this.x, _this.y);
         ctx.lineTo(point.x, point.y);
-        ctx.strokeStyle = 'rgba(156,217,249,' + _this.active + ')';
+        ctx.strokeStyle = 'rgba(0,192,152,' + _this.active + ')';
         ctx.stroke();
       }
       //circle
       ctx.beginPath();
       ctx.arc(_this.x, _this.y, _this.circle.radius, 0, 2 * Math.PI, false);
-      ctx.fillStyle = 'rgba(156,217,249,' + _this.circle.active + ')';
+      ctx.fillStyle = 'rgba(0,192,152,' + _this.circle.active + ')';
       ctx.fill();
     };
 
