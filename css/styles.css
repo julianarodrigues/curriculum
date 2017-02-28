@@ -150,13 +150,4 @@ article {
   .headline {
     display: inline-block;
   }
-  .subline {
-    display: inline-block;
-    font-size: 2.0rem;
-    color: #00C098;
-    margin-left: 6px;
-  }
-  .subline:before {
-    content: ' - ';
-  }
 }
