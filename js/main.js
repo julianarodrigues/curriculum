@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   var pointOffset = 64;
 
-// Main
+  // Main
   initCanvas();
 
   addListeners();
@@ -79,7 +79,7 @@ $(document).ready(function () {
     initAnimation();
   }
 
-// Event handling
+  // Event handling
   function addListeners() {
     window.addEventListener('scroll', scrollCheck);
     window.addEventListener('resize', resize);
@@ -105,7 +105,7 @@ $(document).ready(function () {
   function resize() {
     width = wrapper.offsetWidth;
     height = wrapper.offsetHeight;
-    target = {x: width / 2, y: height / 2};
+    target = { x: width / 2, y: height / 2 };
     peakWidth = Math.max(width, peakWidth);
     peakHeight = Math.max(width, peakHeight);
 
@@ -148,11 +148,11 @@ $(document).ready(function () {
         randomY = maxY;
       }
 
-      targetTween = TweenLite.to(target, 1, {x: randomX, y: randomY, onComplete: animateTarget});
+      targetTween = TweenLite.to(target, 1, { x: randomX, y: randomY, onComplete: animateTarget });
     }
   }
 
-// animation
+  // animation
   function initAnimation() {
     animate();
     //for (var i in points) {
@@ -162,6 +162,8 @@ $(document).ready(function () {
 
   function animate() {
     ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = "#333333";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
     var numPoints = points.length;
     for (var i = 0; i < numPoints; i++) {
       var point = points[i];
@@ -246,19 +248,19 @@ $(document).ready(function () {
         ctx.beginPath();
         ctx.moveTo(_this.x, _this.y);
         ctx.lineTo(point.x, point.y);
-        ctx.strokeStyle = 'rgba(156,217,249,' + _this.active + ')';
+        ctx.strokeStyle = 'rgba(74,246,38,' + _this.active + ')';
         ctx.stroke();
       }
       //circle
       ctx.beginPath();
       ctx.arc(_this.x, _this.y, _this.circle.radius, 0, 2 * Math.PI, false);
-      ctx.fillStyle = 'rgba(156,217,249,' + _this.circle.active + ')';
+      ctx.fillStyle = 'rgba(74,246,38,' + _this.circle.active + ')';
       ctx.fill();
     };
 
   }
 
-// Util
+  // Util
   function getDistance(p1, p2) {
     return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
   }
