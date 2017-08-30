@@ -58,6 +58,8 @@ h6 {
   border-bottom-width: 1px;
   border-bottom-color: #00C098;
   border-bottom-style: solid;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 #wrapper {
   position: relative;
