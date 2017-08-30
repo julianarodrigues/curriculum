@@ -131,6 +131,11 @@ article {
   color: #ffffff;
   font-weight: 400;
 }
+
+section {
+  margin-top: 15px;  
+}
+
 @media print {
   html {
     font-size: 11px;
