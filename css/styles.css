@@ -153,4 +153,84 @@ article {
   .headline {
     display: inline-block;
   }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .section-title {
+    color: #000;
+  }
+
+
+  .section-title {
+    color: #000;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom-width: 2px;
+    border-bottom-color: #000;
+    border-bottom-style: solid;
+  }
+  .main {
+    border-left-width: 4px;
+    border-left-color: #000;
+    border-left-style: solid;
+    padding: 2px 15px;
+  }
+  .separator {
+    border-bottom-width: 2px;
+    border-bottom-color: #000;
+    border-bottom-style: solid;
+  }
+  .separator-sm {
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+    border-bottom-style: solid;
+  }
+  ul ul li {
+    padding-left: 5px;
+    border-left-width: 1px;
+    border-left-color: #000;
+    border-left-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+    border-bottom-style: dotted;
+  }
+  .list-item {
+    padding-left: 5px;
+    padding-bottom: 2px;
+    border-bottom-width: 1px;
+    border-bottom-color: #000;
+    border-bottom-style: solid;
+  }
+  .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000;
+    text-align: center;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .social-icon:hover,
+  .social-icon:active,
+  .social-icon:focus {
+    color: #ffffff;
+    background-color: #000;
+  }
+  .badge {
+    background-color: #000;
+    color: #000;
+    font-weight: 400;
+  }
 }
